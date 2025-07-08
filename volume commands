@@ -1,0 +1,30 @@
+sudo su
+lsblk -fs
+lsblk -l
+fdisk -l
+fdisk /dev/xvda1
+m n p w
+lsblk -fs
+partprob
+mkfs.ext4 /dev/xvda127
+lsblk --fs
+mkdir /mnt/manjula
+mount /dev/xvda127 /mnt/manjula
+lsblk -fs
+nano f1
+ls
+cd /
+vi /etc/fstab
+    /dev/xvda127 /mnt/manjula ext4 0 0
+lsblk -fs
+cd /mnt/manjula
+ls
+cd /
+vi /etc/fstab
+umount /mnt/manjula
+lsblk -fs
+cd /mnt/manjula
+ls
+mount /dev/xvda127 /mnt/manjula
+cd /mnt/manjula
+ls
